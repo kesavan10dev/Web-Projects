@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en" class="overflow-x-hidden h-full">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone-Paper-Sisor</title>
+    <link href="dist/output.css" rel="stylesheet"/>
+
+</head>
+
+<body class="overflow-x-hidden scroll-smooth"> 
+
+    <!-- header -->
+
+    <header class="w-full">
+
+        <div class="bg-black w-full">
+
+            <ul class="text-white text-3xl font-bold p-5 flex flex-row justify-center items-center gap-x-6 sm:gap-x-10">
+
+                <li>ROCK</li>
+                <li>PAPER</li>
+                <li>SISOR</li>
+            
+            </ul>
+
+        </div>
+
+    </header>
+
+    <!-- main -->
+
+    <main class="sm:h-full w-full">
+
+        <div class="mt-48 flex flex-row justify-center gap-x-6 sm:gap-x-10">
+
+            <img src="images/stone.jpg" class="stone h-24 border-4 border-black rounded-full p-4 hover:shadow-lg hover:shadow-black" alt="stone">
+            <img src="images/paper.jpg" class="paper h-24 border-4 border-black rounded-full p-4 hover:shadow-lg hover:shadow-black" alt="paper">
+            <img src="images/sisor.jpg" class="sisor h-24 border-4 border-black rounded-full p-4 hover:shadow-lg hover:shadow-black" alt="sisor">
+
+        </div>
+
+        <div class="mt-16 text-2xl font-sans flex text-center flex-col sm:flex-row sm:justify-center sm:gap-x-10">
+
+            YOU : <p class="u">0</p>
+            COMPUTER : <p class="c">0</p>
+
+        </div>
+
+        <div class="mt-10 text-2xl font-semibold text-center flex sm:flex-row flex-col justify-center">
+
+            <p class="pr-3">RESULT :</p><p class="res text-red-700"> </p>
+
+        </div>
+
+    </main>
+    
+    <script src="src/script.js"></script>
+
+</body>
+
+</html>
