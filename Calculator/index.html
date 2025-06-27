@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en" class="overflow-hidden h-full">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link href="output.css" rel="stylesheet" />
+
+</head>
+
+<body class="overflow-hidden h-full bg-gradient-to-r from-purple-800 flex justify-center items-center">
+  
+  <!-- Calculator box -->
+  <div class="bg-gradient-to-r from-purple-800 bg-opacity-30 rounded-3xl shadow-lg shadow-purple-800 flow-root">
+
+    <!-- result box -->
+    <div class="h-[75px] w-[250px] text-purple-800 text-4xl font-bold flex justify-end items-end m-5 rounded-xl overflow-x-auto">
+      
+      <input type="text" class="result h-full w-[250px] p-4 bg-white bg-opacity-50 rounded-3xl text-right placeholder:text-purple-400 outline-none" placeholder="0" readonly inputmode="none">
+
+    </div>
+
+    <!-- numbers -->
+     <div class="bg-white text-purple-800 bg-opacity-30 grid grid-cols-4 gap-4 rounded-3xl m-5 p-3 pb-5 text-center font-extrabold w-[250px]">
+
+      <button class="no bg-white bg-opacity-50 rounded-full p-3 shadow-xl shadow-purple-800" value="ac">AC</button>
+      <button class="no bg-white bg-opacity-50 rounded-full p-3 shadow-xl shadow-purple-800" value="clr">⌫</button>
+      <button class="no bg-white bg-opacity-50 rounded-full p-3 shadow-xl shadow-purple-800" value="%">%</button>
+      <button class="no bg-purple-800 rounded-full p-3 shadow-xl shadow-purple-800 text-white" value="/">/</button>
+      <button class="no bg-white bg-opacity-50 rounded-full p-3 shadow-xl shadow-purple-800" value="7">7</button>      
+      <button class="no bg-white bg-opacity-50 rounded-full p-3 shadow-xl shadow-purple-800" value="8">8</button>
+      <button class="no bg-white bg-opacity-50 rounded-full p-3 shadow-xl shadow-purple-800" value="9">9</button>
+      <button class="no bg-purple-800 rounded-full p-3 shadow-xl shadow-purple-800 text-white" value="*">*</button>
+      <button class="no bg-white bg-opacity-50 rounded-full p-3 shadow-xl shadow-purple-800" value="4">4</button>
+      <button class="no bg-white bg-opacity-50 rounded-full p-3 shadow-xl shadow-purple-800" value="5">5</button>
+      <button class="no bg-white bg-opacity-50 rounded-full p-3 shadow-xl shadow-purple-800" value="6">6</button>
+      <button class="no bg-purple-800 rounded-full p-3 shadow-xl shadow-purple-800 text-white" value="-">-</button>
+      <button class="no bg-white bg-opacity-50 rounded-full p-3 shadow-xl shadow-purple-800" value="1">1</button>
+      <button class="no bg-white bg-opacity-50 rounded-full p-3 shadow-xl shadow-purple-800" value="2">2</button>
+      <button class="no bg-white bg-opacity-50 rounded-full p-3 shadow-xl shadow-purple-800" value="3">3</button>
+      <button class="no bg-purple-800 rounded-full p-3 shadow-xl shadow-purple-800 text-white" value="+">+</button>
+      <button class="no bg-white bg-opacity-50 rounded-full p-3 shadow-xl shadow-purple-800" value="00">00</button>
+      <button class="no bg-white bg-opacity-50 rounded-full p-3 shadow-xl shadow-purple-800" value="0">0</button>
+      <button class="no bg-white bg-opacity-50 rounded-full p-3 shadow-xl shadow-purple-800" value=".">.</button>
+      <button class="no bg-purple-800 rounded-full p-3 shadow-xl shadow-purple-800 text-white" value="=">=</button>
+    
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
