@@ -1,64 +1,239 @@
 <!DOCTYPE html>
 
-<html lang="en" class="overflow-x-hidden h-full">
+<html lang="en">
 
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stone-Paper-Sisor</title>
-    <link href="output.css" rel="stylesheet"/>
+    <title>My Portfolio</title>
+    <link href="output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="images/pf-icon.png">
+
+    <!-- <style>
+
+        html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        }
+
+        /* Force full width on all sections */
+        header, main, footer {
+        margin-left: 0;
+        padding-left: 0;
+        width: 100%;
+        max-width: 100%;
+        }
+    </style> -->
 
 </head>
 
-<body class="overflow-x-hidden scroll-smooth"> 
+<body> 
 
-    <!-- header -->
+    <nav class="h-20 w-full left-0 right-0 mx-0 px-0 sm:w-full bg-white shadow-lg shadow-red-800 p-5 rounded-3xl flex flex-row justify-between sm:sticky sm:top-0">
+        <!-- Web Name -->
+        <div class="text-4xl font-bold sm:flex-1 px-3"><span class="text-red-700">KESAVAN</span>.DEV</div>
+        <!-- Menu Lists -->
+        <div class="menu sm:text-2xl absolute -top-full w-screen font-thin bg-white sm:shadow-none shadow-md shadow-black rounded-lg left-0 flex flex-col items-center transition-all duration-500 ease-in-out menu-closed z-10 sm:static sm:flex-row sm:flex-1">
 
-    <header class="w-full">
-
-        <div class="bg-black w-full">
-
-            <ul class="text-white text-3xl font-bold p-5 flex flex-row justify-center items-center gap-x-6 sm:gap-x-10">
-
-                <li>ROCK</li>
-                <li>PAPER</li>
-                <li>SISOR</li>
-            
+            <ul class="flex flex-col gap-4 pb-4 sm:py-3 sm:flex-row sm:justify-evenly w-full">
+                <li><a href="#head" class="menu-item text-red-700 underline decoration-red-700">Home</a></li>
+                <li><a href="#skills" class="menu-item">Skills</a></li>
+                <li><a href="#projects" class="menu-item">Projects</a></li>
+                <li><a href="#about" class="menu-item">About</a></li>
+                <li><a href="#contact" class="menu-item">Contact</a></li>
             </ul>
+        
+        </div> 
 
+        <div class="menubtn cursor-pointer sm:hidden text-2xl mx-4 my-auto">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </nav>    
+
+    <!-- intro -->
+
+    <header class="sm:h-auto w-full"  id="head">
+
+        <div class="flex sm:flex-row sm:justify-center sm:items-center flex-col sm:p-32 p-20 mx-auto sm:my-auto">
+            
+            <div class="text-5xl pr-32 mb-10">
+                <p class="text-2xl lg:text-5xl"><span class="text-red-700 font-bold lg:text-6xl text-4xl font-sans underline decoration-red-700">Hi</span> there,<br> <u class="text-red-700 font-bold lg:text-6xl text-4xl font-sans">Welcome</u> to my Portfolio.</p>
+            </div>
+
+            <div class="border-4 border-red-700 shadow-xl shadow-red-700 sm:shadow-none rounded-full p-2 sm:border-red-700 sm:hover:shadow-lg sm:hover:shadow-red-700 sm:border-4 sm:rounded-full">
+                <img src="images/profile.jpeg" class="w-auto xl:h-[300px] rounded-full">
+            </div>
+        
         </div>
 
     </header>
 
-    <!-- main -->
+    <hr class="border-2 border-red-700">
 
-    <main class="sm:h-full w-full">
+    <!-- skills -->
 
-        <div class="mt-48 flex flex-row justify-center gap-x-6 sm:gap-x-10">
+    <main class="sm:h-auto w-full p-16" id="skills">
 
-            <img src="images/stone.jpg" class="stone h-24 border-4 border-black rounded-full p-4 hover:shadow-lg hover:shadow-black" alt="stone">
-            <img src="images/paper.jpg" class="paper h-24 border-4 border-black rounded-full p-4 hover:shadow-lg hover:shadow-black" alt="paper">
-            <img src="images/sisor.jpg" class="sisor h-24 border-4 border-black rounded-full p-4 hover:shadow-lg hover:shadow-black" alt="sisor">
+        <div class="flex sm:justify-center sm:items-center flex-col gap-10">
+
+            <p class="font-bold text-4xl text-center underline decoration-red-700">My <span class="text-red-700">Skills</span></p>
+
+            <div class="sm:flex sm:flex-row grid flex-wrap gap-20 p-5 sm:p-16 sm:items-center">
+
+                <div class="h-52 w-40 border-4 border-red-700 shadow-lg shadow-red-700 sm:shadow-none sm:hover:shadow-lg sm:hover:shadow-red-700 rounded-lg mx-auto text-center">
+                    <img src="images/HTML.jpg" class="h-24 mx-auto my-5"><hr class="border-2 border-red-700">
+                    <p class="text-2xl font-mono py-4">HTMl</p>
+                </div>
+
+                <div class="h-52 w-40 border-4 border-red-700 shadow-lg shadow-red-700 sm:shadow-none sm:hover:shadow-lg sm:hover:shadow-red-700 rounded-lg mx-auto text-center">
+                    <img src="images/css.png" class="h-24 mx-auto my-5"><hr class="border-2 border-red-700">
+                    <p class="text-2xl font-mono py-4">css</p>
+                </div>
+
+                <div class="h-52 w-40 border-4 flow-root border-red-700 shadow-lg shadow-red-700 sm:shadow-none sm:hover:shadow-lg sm:hover:shadow-red-700 rounded-lg mx-auto text-center">
+                    <img src="images/TWCSS.png" class="h-24 mx-auto my-5 p-4"><hr class="border-2 border-red-700">
+                    <p class="text-2xl font-mono">Tailwind CSS</p>
+                </div>
+
+                <div class="h-52 w-40 border-4 border-red-700 shadow-lg shadow-red-700 sm:shadow-none sm:hover:shadow-lg sm:hover:shadow-red-700 rounded-lg mx-auto text-center">
+                    <img src="images/js.webp" class="h-24 mx-auto my-5"><hr class="border-2 border-red-700">
+                    <p class="text-2xl font-mono py-4">JavaScript</p>
+                </div>
+
+                <div class="h-52 w-40 border-4 border-red-700 shadow-lg shadow-red-700 sm:shadow-none sm:hover:shadow-lg sm:hover:shadow-red-700 rounded-lg mx-auto text-center">
+                    <img src="images/github.png" class="h-24 mx-auto my-5"><hr class="border-2 border-red-700">
+                    <p class="text-2xl font-mono py-4">GitHub</p>
+                </div>
+
+            </div>
+        
+        </div>
+
+    </main>
+
+    <hr class="border-2 border-red-700">
+
+    <!-- Projects -->
+
+    <main id="projects" class="sm:h-auto w-full">
+
+        <div class="p-16">
+
+        <p class="font-bold text-4xl text-center underline decoration-red-700">My <span class="text-red-700">Projects</span></p>
 
         </div>
 
-        <div class="mt-16 text-2xl font-sans flex text-center flex-col sm:flex-row sm:justify-center sm:gap-x-10">
+        <div class="sm:flex sm:flex-row grid lg:flex-wrap gap-10 p-5 sm:p-10 sm:items-center">
 
-            YOU : <p class="u">0</p>
-            COMPUTER : <p class="c">0</p>
+            <div class="lg:h-[500px] lg:w-[500px] h-[400px] w-[300px] border-4 border-red-700 shadow-lg shadow-red-700 sm:shadow-none sm:hover:shadow-lg sm:hover:shadow-red-700 mx-auto rounded-lg text-center overflow-auto">
+                    
+                <a href="https://kesavan10dev.github.io/Web-Projects/Stone-Paper-Sisor/" target="_blank" class="flex justify-center">
+                    <img src="images/sps.png" class="h-[200px] w-auto m-7">
+                </a>
+                
+                <hr class="border-2 border-red-700">
 
-        </div>
+                <p class="text-3xl text-red-700 text-center font-mono font-bold py-4">Stone Paper Sisor</p>
 
-        <div class="my-10 text-2xl font-semibold text-center flex sm:flex-row flex-col justify-center">
+                <hr class="border-2 border-red-700">
+                
+                <p class="text-2xl font-mono p-2">A classic Stone-Paper-Scissor (Rock-Paper-Scissors) game where the user plays against the computer. The player selects an option, and the computer randomly picks one. The result (win/lose/draw) is instantly displayed. This project focuses on JavaScript logic, conditionals, and randomness.</p>
+            
+            </div>
 
-            <p class="pr-3">RESULT :</p><p class="res text-red-700"> </p>
+            <div class="lg:h-[500px] lg:w-[500px] h-[400px] w-[300px] border-4 border-red-700 shadow-lg shadow-red-700 sm:shadow-none sm:hover:shadow-lg sm:hover:shadow-red-700 rounded-lg mx-auto text-center my-16 overflow-auto">
+                    
+                <a href="https://kesavan10dev.github.io/Web-Projects/Calculator/" target="_blank" class="flex justify-center">
+                    <img src="images/calc.png" class="h-[200px] w-auto m-5">
+                </a>
+
+                <hr class="border-2 border-red-700">
+
+                <p class="text-3xl text-red-700 text-center font-mono font-bold py-4">Calculator</p>
+
+                <hr class="border-2 border-red-700">
+
+                <p class="text-2xl font-mono p-2">This is a simple, responsive calculator built using HTML, CSS, and JavaScript. It performs basic arithmetic operations like addition, subtraction, multiplication, and division. The interface is designed to resemble a real calculator, making it user-friendly and intuitive. It's a beginner-friendly project focused on DOM manipulation and event handling in JavaScript.</p>
+            
+            </div>
 
         </div>
 
     </main>
-    
-    <script src="script.js"></script>
+
+    <hr class="border-2 border-red-700">
+
+    <!-- About -->
+
+    <main id="about" class="sm:h-auto w-full p-16">
+
+        <div class="flex flex-col gap-10 sm:justify-center sm:items-center">
+
+            <p class="font-bold text-4xl text-center underline decoration-red-700">About <span class="text-red-700">Me</span></p>
+
+            <p class="text-2xl font-light p-4">I'm Kesavan, a self-driven full-stack developer with a passion for building clean and responsive web applications. I specialize in Java, JavaScript, React, Node.js, and Tailwind CSS. Currently, I'm focusing on strengthening my data structures and algorithms in Java and creating real-world projects to build my portfolio. I enjoy learning new technologies, solving coding challenges, and aiming to land a role as a full-time developer by 2026. Outside tech, I enjoy UI design, watching coding tutorials, and gaming.</p>
+        </div>
+
+    </main>
+
+    <!-- <hr class="border-2 border-red-700"> -->
+
+    <!-- contact -->
+    <footer id="contact" class="bg-red-700 text-white rounded-t-3xl w-full">
+
+        <div>
+
+            <p class="font-bold text-5xl text-center py-16 underline decoration-white">Contact Me</p>
+            
+            <p class="text-4xl text-center pb-5">I'm currently open to new opportunities. Feel free to reach out via any platform below.</p>
+            
+            <div>
+
+                <ul class="w-full text-center text-2xl pt-7 pb-10 flex flex-col gap-4 px-4">
+
+                    <li class="font-bold text-3xl break-words">Email : <a href="mailto:kesavanpro2006@gmail.com" target="_blank" class="hover:underline decoration-white">kesavanpro2006@gmail.com</a></li>
+                    <li class="font-bold text-3xl break-words">Linkedin : <a href="https://www.linkedin.com/in/kesavan-m-2425912a0" target="_blank" class="hover:underline decoration-white">linkedin.com/in/kesavan</a></li>
+                    <li class="font-bold text-3xl break-words">Github : <a href="https://github.com/kesavan10dev" target="_blank" class="hover:underline decoration-white">github.com/kesavan10dev</a></li>
+                    <li class="text-3xl font-bold break-words">Location : Pondicherry , India.</li>
+                
+                </ul>
+            
+            </div>
+        
+        </div>
+
+    </footer>
+
+    <script>
+
+        const btn = document.querySelector(".menubtn");
+        const opt = document.querySelector(".menu");
+
+        const menuItems = document.querySelectorAll(".menu-item");
+
+        menuItems.forEach(item => {
+        item.addEventListener("click", () => {
+            // Remove blue color from all
+            menuItems.forEach(el => el.classList.remove("text-red-700"));
+            menuItems.forEach(el => el.classList.remove("underline","decoration-red-700"));
+
+            // Add blue color to the clicked one
+            item.classList.add("text-red-700");
+            item.classList.add("underline","decoration-red-700");
+            });
+        
+        });
+
+        btn.addEventListener("click",()=>{
+            opt.classList.toggle("top-20");
+        })
+
+    </script>
 
 </body>
 
